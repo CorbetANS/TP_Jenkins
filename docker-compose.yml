@@ -1,0 +1,10 @@
+version: "3.5"
+networks:
+  front:
+  back:
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    networks:
+      - front
+      - back
